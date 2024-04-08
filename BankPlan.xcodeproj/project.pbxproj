@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193E932BB9223B00AF8B18 /* AppDelegate.swift */; };
+		BB193E962BB9223B00AF8B18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193E952BB9223B00AF8B18 /* SceneDelegate.swift */; };
+		BB193E982BB9223B00AF8B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193E972BB9223B00AF8B18 /* ViewController.swift */; };
+		BB193E9B2BB9223B00AF8B18 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB193E9A2BB9223B00AF8B18 /* Base */; };
+		BB193E9D2BB9223C00AF8B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB193E9C2BB9223C00AF8B18 /* Assets.xcassets */; };
+		BB193EA02BB9223C00AF8B18 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB193E9F2BB9223C00AF8B18 /* Base */; };
+		BB193EAB2BB9223C00AF8B18 /* BankPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193EAA2BB9223C00AF8B18 /* BankPlanTests.swift */; };
+		BB193EB52BB9223C00AF8B18 /* BankPlanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193EB42BB9223C00AF8B18 /* BankPlanUITests.swift */; };
+		BB193EB72BB9223C00AF8B18 /* BankPlanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193EB62BB9223C00AF8B18 /* BankPlanUITestsLaunchTests.swift */; };
+		BB193EC52BB9265300AF8B18 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BB193EC42BB9265300AF8B18 /* FirebaseAuth */; };
+		BB193EC72BB9265300AF8B18 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BB193EC62BB9265300AF8B18 /* FirebaseAuthCombine-Community */; };
+		BB193EC92BB92A5500AF8B18 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193EC82BB92A5500AF8B18 /* LoginVC.swift */; };
+		BB193ECD2BB92F5D00AF8B18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BB193ECC2BB92F5D00AF8B18 /* Alamofire */; };
+		BB193ECF2BB935F100AF8B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB193ECE2BB935F100AF8B18 /* GoogleService-Info.plist */; };
+		BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */; };
+		BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F125D2BC040090075D7BC /* RegisterVC.swift */; };
+		BB8A56FD2BC26904009ECED0 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8A56FC2BC26904009ECED0 /* test.swift */; };
+		BBD9E3172BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
+		BBD9E3182BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
+		BBD9E3192BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
+		BBD9E31A2BBF01580056D4FD /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30F2BBF01570056D4FD /* Pretendard-Medium.otf */; };
+		BBD9E31B2BBF01580056D4FD /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30F2BBF01570056D4FD /* Pretendard-Medium.otf */; };
+		BBD9E31C2BBF01580056D4FD /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30F2BBF01570056D4FD /* Pretendard-Medium.otf */; };
+		BBD9E31D2BBF01580056D4FD /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3102BBF01570056D4FD /* Pretendard-Regular.otf */; };
+		BBD9E31E2BBF01580056D4FD /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3102BBF01570056D4FD /* Pretendard-Regular.otf */; };
+		BBD9E31F2BBF01580056D4FD /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3102BBF01570056D4FD /* Pretendard-Regular.otf */; };
+		BBD9E3202BBF01580056D4FD /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3112BBF01570056D4FD /* Pretendard-ExtraLight.otf */; };
+		BBD9E3212BBF01580056D4FD /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3112BBF01570056D4FD /* Pretendard-ExtraLight.otf */; };
+		BBD9E3222BBF01580056D4FD /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3112BBF01570056D4FD /* Pretendard-ExtraLight.otf */; };
+		BBD9E3232BBF01580056D4FD /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3122BBF01570056D4FD /* Pretendard-Thin.otf */; };
+		BBD9E3242BBF01580056D4FD /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3122BBF01570056D4FD /* Pretendard-Thin.otf */; };
+		BBD9E3252BBF01580056D4FD /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3122BBF01570056D4FD /* Pretendard-Thin.otf */; };
+		BBD9E3262BBF01580056D4FD /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3132BBF01580056D4FD /* Pretendard-ExtraBold.otf */; };
+		BBD9E3272BBF01580056D4FD /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3132BBF01580056D4FD /* Pretendard-ExtraBold.otf */; };
+		BBD9E3282BBF01580056D4FD /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3132BBF01580056D4FD /* Pretendard-ExtraBold.otf */; };
+		BBD9E3292BBF01580056D4FD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3142BBF01580056D4FD /* Pretendard-Bold.otf */; };
+		BBD9E32A2BBF01580056D4FD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3142BBF01580056D4FD /* Pretendard-Bold.otf */; };
+		BBD9E32B2BBF01580056D4FD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3142BBF01580056D4FD /* Pretendard-Bold.otf */; };
+		BBD9E32C2BBF01580056D4FD /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */; };
+		BBD9E32D2BBF01580056D4FD /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */; };
+		BBD9E32E2BBF01580056D4FD /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */; };
+		BBD9E32F2BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
+		BBD9E3302BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
+		BBD9E3312BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB193EA72BB9223C00AF8B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB193E882BB9223B00AF8B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB193E8F2BB9223B00AF8B18;
+			remoteInfo = BankPlan;
+		};
+		BB193EB12BB9223C00AF8B18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB193E882BB9223B00AF8B18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB193E8F2BB9223B00AF8B18;
+			remoteInfo = BankPlan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB193E902BB9223B00AF8B18 /* BankPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB193E932BB9223B00AF8B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB193E952BB9223B00AF8B18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB193E972BB9223B00AF8B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB193E9A2BB9223B00AF8B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB193E9C2BB9223C00AF8B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB193E9F2BB9223C00AF8B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB193EA12BB9223C00AF8B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB193EA62BB9223C00AF8B18 /* BankPlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankPlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB193EAA2BB9223C00AF8B18 /* BankPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPlanTests.swift; sourceTree = "<group>"; };
+		BB193EB02BB9223C00AF8B18 /* BankPlanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankPlanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB193EB42BB9223C00AF8B18 /* BankPlanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPlanUITests.swift; sourceTree = "<group>"; };
+		BB193EB62BB9223C00AF8B18 /* BankPlanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPlanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB193EC82BB92A5500AF8B18 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BB193ECE2BB935F100AF8B18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginVC.swift; sourceTree = "<group>"; };
+		BB4AC99B2BBC661E00284B20 /* BankPlan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BankPlan.entitlements; sourceTree = "<group>"; };
+		BB7F125D2BC040090075D7BC /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		BB8A56FC2BC26904009ECED0 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		BBD9E30F2BBF01570056D4FD /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		BBD9E3102BBF01570056D4FD /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		BBD9E3112BBF01570056D4FD /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		BBD9E3122BBF01570056D4FD /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		BBD9E3132BBF01580056D4FD /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		BBD9E3142BBF01580056D4FD /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB193E8D2BB9223B00AF8B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB193ECD2BB92F5D00AF8B18 /* Alamofire in Frameworks */,
+				BB193EC52BB9265300AF8B18 /* FirebaseAuth in Frameworks */,
+				BB193EC72BB9265300AF8B18 /* FirebaseAuthCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB193EA32BB9223C00AF8B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB193EAD2BB9223C00AF8B18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB193E872BB9223B00AF8B18 = {
+			isa = PBXGroup;
+			children = (
+				BB193ECE2BB935F100AF8B18 /* GoogleService-Info.plist */,
+				BB193E922BB9223B00AF8B18 /* BankPlan */,
+				BB193EA92BB9223C00AF8B18 /* BankPlanTests */,
+				BB193EB32BB9223C00AF8B18 /* BankPlanUITests */,
+				BB193E912BB9223B00AF8B18 /* Products */,
+				BB193ECB2BB92F5D00AF8B18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB193E912BB9223B00AF8B18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB193E902BB9223B00AF8B18 /* BankPlan.app */,
+				BB193EA62BB9223C00AF8B18 /* BankPlanTests.xctest */,
+				BB193EB02BB9223C00AF8B18 /* BankPlanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB193E922BB9223B00AF8B18 /* BankPlan */ = {
+			isa = PBXGroup;
+			children = (
+				BB4AC99B2BBC661E00284B20 /* BankPlan.entitlements */,
+				BB193E932BB9223B00AF8B18 /* AppDelegate.swift */,
+				BB193E952BB9223B00AF8B18 /* SceneDelegate.swift */,
+				BB193E972BB9223B00AF8B18 /* ViewController.swift */,
+				BB193E992BB9223B00AF8B18 /* Main.storyboard */,
+				BB193E9C2BB9223C00AF8B18 /* Assets.xcassets */,
+				BB193E9E2BB9223C00AF8B18 /* LaunchScreen.storyboard */,
+				BB193EA12BB9223C00AF8B18 /* Info.plist */,
+				BB193EC82BB92A5500AF8B18 /* LoginVC.swift */,
+				BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */,
+				BB7F125D2BC040090075D7BC /* RegisterVC.swift */,
+				BB8A56FC2BC26904009ECED0 /* test.swift */,
+				BBD9E30D2BBF00EB0056D4FD /* Font */,
+			);
+			path = BankPlan;
+			sourceTree = "<group>";
+		};
+		BB193EA92BB9223C00AF8B18 /* BankPlanTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB193EAA2BB9223C00AF8B18 /* BankPlanTests.swift */,
+			);
+			path = BankPlanTests;
+			sourceTree = "<group>";
+		};
+		BB193EB32BB9223C00AF8B18 /* BankPlanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB193EB42BB9223C00AF8B18 /* BankPlanUITests.swift */,
+				BB193EB62BB9223C00AF8B18 /* BankPlanUITestsLaunchTests.swift */,
+			);
+			path = BankPlanUITests;
+			sourceTree = "<group>";
+		};
+		BB193ECB2BB92F5D00AF8B18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBD9E30D2BBF00EB0056D4FD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */,
+				BBD9E3142BBF01580056D4FD /* Pretendard-Bold.otf */,
+				BBD9E3132BBF01580056D4FD /* Pretendard-ExtraBold.otf */,
+				BBD9E3112BBF01570056D4FD /* Pretendard-ExtraLight.otf */,
+				BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */,
+				BBD9E30F2BBF01570056D4FD /* Pretendard-Medium.otf */,
+				BBD9E3102BBF01570056D4FD /* Pretendard-Regular.otf */,
+				BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */,
+				BBD9E3122BBF01570056D4FD /* Pretendard-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB193E8F2BB9223B00AF8B18 /* BankPlan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB193EBA2BB9223C00AF8B18 /* Build configuration list for PBXNativeTarget "BankPlan" */;
+			buildPhases = (
+				BB193E8C2BB9223B00AF8B18 /* Sources */,
+				BB193E8D2BB9223B00AF8B18 /* Frameworks */,
+				BB193E8E2BB9223B00AF8B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankPlan;
+			packageProductDependencies = (
+				BB193EC42BB9265300AF8B18 /* FirebaseAuth */,
+				BB193EC62BB9265300AF8B18 /* FirebaseAuthCombine-Community */,
+				BB193ECC2BB92F5D00AF8B18 /* Alamofire */,
+			);
+			productName = BankPlan;
+			productReference = BB193E902BB9223B00AF8B18 /* BankPlan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB193EA52BB9223C00AF8B18 /* BankPlanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB193EBD2BB9223C00AF8B18 /* Build configuration list for PBXNativeTarget "BankPlanTests" */;
+			buildPhases = (
+				BB193EA22BB9223C00AF8B18 /* Sources */,
+				BB193EA32BB9223C00AF8B18 /* Frameworks */,
+				BB193EA42BB9223C00AF8B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB193EA82BB9223C00AF8B18 /* PBXTargetDependency */,
+			);
+			name = BankPlanTests;
+			productName = BankPlanTests;
+			productReference = BB193EA62BB9223C00AF8B18 /* BankPlanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB193EAF2BB9223C00AF8B18 /* BankPlanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB193EC02BB9223C00AF8B18 /* Build configuration list for PBXNativeTarget "BankPlanUITests" */;
+			buildPhases = (
+				BB193EAC2BB9223C00AF8B18 /* Sources */,
+				BB193EAD2BB9223C00AF8B18 /* Frameworks */,
+				BB193EAE2BB9223C00AF8B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB193EB22BB9223C00AF8B18 /* PBXTargetDependency */,
+			);
+			name = BankPlanUITests;
+			productName = BankPlanUITests;
+			productReference = BB193EB02BB9223C00AF8B18 /* BankPlanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB193E882BB9223B00AF8B18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BB193E8F2BB9223B00AF8B18 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					BB193EA52BB9223C00AF8B18 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BB193E8F2BB9223B00AF8B18;
+					};
+					BB193EAF2BB9223C00AF8B18 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BB193E8F2BB9223B00AF8B18;
+					};
+				};
+			};
+			buildConfigurationList = BB193E8B2BB9223B00AF8B18 /* Build configuration list for PBXProject "BankPlan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB193E872BB9223B00AF8B18;
+			packageReferences = (
+				BB193EC32BB9265300AF8B18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				BB193ECA2BB92E7D00AF8B18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = BB193E912BB9223B00AF8B18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB193E8F2BB9223B00AF8B18 /* BankPlan */,
+				BB193EA52BB9223C00AF8B18 /* BankPlanTests */,
+				BB193EAF2BB9223C00AF8B18 /* BankPlanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB193E8E2BB9223B00AF8B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD9E3292BBF01580056D4FD /* Pretendard-Bold.otf in Resources */,
+				BB193E9D2BB9223C00AF8B18 /* Assets.xcassets in Resources */,
+				BB193ECF2BB935F100AF8B18 /* GoogleService-Info.plist in Resources */,
+				BBD9E3262BBF01580056D4FD /* Pretendard-ExtraBold.otf in Resources */,
+				BBD9E3202BBF01580056D4FD /* Pretendard-ExtraLight.otf in Resources */,
+				BBD9E32F2BBF01580056D4FD /* Pretendard-Black.otf in Resources */,
+				BBD9E32C2BBF01580056D4FD /* Pretendard-Light.otf in Resources */,
+				BBD9E3232BBF01580056D4FD /* Pretendard-Thin.otf in Resources */,
+				BBD9E3172BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */,
+				BB193EA02BB9223C00AF8B18 /* Base in Resources */,
+				BBD9E31D2BBF01580056D4FD /* Pretendard-Regular.otf in Resources */,
+				BB193E9B2BB9223B00AF8B18 /* Base in Resources */,
+				BBD9E31A2BBF01580056D4FD /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB193EA42BB9223C00AF8B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD9E3182BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */,
+				BBD9E32D2BBF01580056D4FD /* Pretendard-Light.otf in Resources */,
+				BBD9E3242BBF01580056D4FD /* Pretendard-Thin.otf in Resources */,
+				BBD9E32A2BBF01580056D4FD /* Pretendard-Bold.otf in Resources */,
+				BBD9E3302BBF01580056D4FD /* Pretendard-Black.otf in Resources */,
+				BBD9E3272BBF01580056D4FD /* Pretendard-ExtraBold.otf in Resources */,
+				BBD9E31E2BBF01580056D4FD /* Pretendard-Regular.otf in Resources */,
+				BBD9E3212BBF01580056D4FD /* Pretendard-ExtraLight.otf in Resources */,
+				BBD9E31B2BBF01580056D4FD /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB193EAE2BB9223C00AF8B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD9E3192BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */,
+				BBD9E32E2BBF01580056D4FD /* Pretendard-Light.otf in Resources */,
+				BBD9E3252BBF01580056D4FD /* Pretendard-Thin.otf in Resources */,
+				BBD9E32B2BBF01580056D4FD /* Pretendard-Bold.otf in Resources */,
+				BBD9E3312BBF01580056D4FD /* Pretendard-Black.otf in Resources */,
+				BBD9E3282BBF01580056D4FD /* Pretendard-ExtraBold.otf in Resources */,
+				BBD9E31F2BBF01580056D4FD /* Pretendard-Regular.otf in Resources */,
+				BBD9E3222BBF01580056D4FD /* Pretendard-ExtraLight.otf in Resources */,
+				BBD9E31C2BBF01580056D4FD /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB193E8C2BB9223B00AF8B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB193E982BB9223B00AF8B18 /* ViewController.swift in Sources */,
+				BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */,
+				BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */,
+				BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */,
+				BB193EC92BB92A5500AF8B18 /* LoginVC.swift in Sources */,
+				BB193E962BB9223B00AF8B18 /* SceneDelegate.swift in Sources */,
+				BB8A56FD2BC26904009ECED0 /* test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB193EA22BB9223C00AF8B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB193EAB2BB9223C00AF8B18 /* BankPlanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB193EAC2BB9223C00AF8B18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB193EB72BB9223C00AF8B18 /* BankPlanUITestsLaunchTests.swift in Sources */,
+				BB193EB52BB9223C00AF8B18 /* BankPlanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB193EA82BB9223C00AF8B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB193E8F2BB9223B00AF8B18 /* BankPlan */;
+			targetProxy = BB193EA72BB9223C00AF8B18 /* PBXContainerItemProxy */;
+		};
+		BB193EB22BB9223C00AF8B18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB193E8F2BB9223B00AF8B18 /* BankPlan */;
+			targetProxy = BB193EB12BB9223C00AF8B18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB193E992BB9223B00AF8B18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB193E9A2BB9223B00AF8B18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB193E9E2BB9223C00AF8B18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB193E9F2BB9223C00AF8B18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB193EB82BB9223C00AF8B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB193EB92BB9223C00AF8B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB193EBB2BB9223C00AF8B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BankPlan/BankPlan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B88XLHTDJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BankPlan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BankPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB193EBC2BB9223C00AF8B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BankPlan/BankPlan.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B88XLHTDJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BankPlan/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BankPlan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB193EBE2BB9223C00AF8B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BankPlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankPlan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BankPlan";
+			};
+			name = Debug;
+		};
+		BB193EBF2BB9223C00AF8B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BankPlanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankPlan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BankPlan";
+			};
+			name = Release;
+		};
+		BB193EC12BB9223C00AF8B18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BankPlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankPlan;
+			};
+			name = Debug;
+		};
+		BB193EC22BB9223C00AF8B18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.BankPlanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankPlan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB193E8B2BB9223B00AF8B18 /* Build configuration list for PBXProject "BankPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB193EB82BB9223C00AF8B18 /* Debug */,
+				BB193EB92BB9223C00AF8B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB193EBA2BB9223C00AF8B18 /* Build configuration list for PBXNativeTarget "BankPlan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB193EBB2BB9223C00AF8B18 /* Debug */,
+				BB193EBC2BB9223C00AF8B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB193EBD2BB9223C00AF8B18 /* Build configuration list for PBXNativeTarget "BankPlanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB193EBE2BB9223C00AF8B18 /* Debug */,
+				BB193EBF2BB9223C00AF8B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB193EC02BB9223C00AF8B18 /* Build configuration list for PBXNativeTarget "BankPlanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB193EC12BB9223C00AF8B18 /* Debug */,
+				BB193EC22BB9223C00AF8B18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB193EC32BB9265300AF8B18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+		BB193ECA2BB92E7D00AF8B18 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB193EC42BB9265300AF8B18 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB193EC32BB9265300AF8B18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BB193EC62BB9265300AF8B18 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB193EC32BB9265300AF8B18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		BB193ECC2BB92F5D00AF8B18 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB193ECA2BB92E7D00AF8B18 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BB193E882BB9223B00AF8B18 /* Project object */;
+}

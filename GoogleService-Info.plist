@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBi5FSI6KYSkQPsPN40kaglTGtJwl69z3Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>833153161277</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.BankPlan</string>
+	<key>PROJECT_ID</key>
+	<string>bankplan-5b97d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bankplan-5b97d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:833153161277:ios:08e4763e1c8802842c7254</string>
+</dict>
+</plist>
