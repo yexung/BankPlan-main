@@ -53,7 +53,7 @@ class LoginVC: UIViewController {
             "id":idtextfield.text ?? "",
             "passwd": pwtextfield.text ?? ""
         ]
-        let url = "http://127.0.0.1:8080/LoginCheck" //?id=kl&passwd=jk
+        let url = "http://127.0.0.1:8080/register1" //?id=kl&passwd=jk
         
         
         Auth.auth().signIn(withEmail: idtextfield.text ?? "", password: pwtextfield.text ?? "") { [weak self] authResult, erroxr in

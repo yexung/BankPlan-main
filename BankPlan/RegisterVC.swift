@@ -13,10 +13,12 @@ class RegisterVC: UIViewController {
     var MarketingAgree = false
     var AgreeCnt: Int = 0
     
+    
     @IBOutlet weak var MarketingAgreeBtn: UIButton!
     @IBOutlet weak var PrivacyAgreeBtn: UIButton!
     @IBOutlet weak var AllagreeBtn: UIButton!
     @IBOutlet weak var NextBtn: UIButton!
+    @IBOutlet weak var PrivacyViewBtn: UIButton!
     
     @IBAction func TapAll(_ sender: UIButton) {
     }
@@ -35,11 +37,10 @@ class RegisterVC: UIViewController {
         MarketingAgreeBtn.isSelected = false
         NextBtn.isSelected = false
         
-        
-        
-        
-        
     }
+
+    
+    
     @objc func TapAllagree(_ sender: UIButton) {
         // Toggle selected state when button is clicked
         sender.isSelected = !sender.isSelected
@@ -69,7 +70,6 @@ class RegisterVC: UIViewController {
         if sender.isSelected {
             print("Button is selected")
             AgreeCnt += 1
-            
             
         } else {
             print("Button is not selected")
@@ -110,8 +110,9 @@ class RegisterVC: UIViewController {
             NextBtn.backgroundColor = .neutral90
         }
         
-    
+        
     }
+    
     
     
 }
