@@ -9,10 +9,15 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    
+    @IBOutlet var sc :UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        
     }
     
 

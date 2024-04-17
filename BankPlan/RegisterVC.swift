@@ -13,7 +13,10 @@ class RegisterVC: UIViewController {
     var MarketingAgree = false
     var AgreeCnt: Int = 0
     
+    var notice : UIView!
     
+    
+    @IBOutlet weak var DismissBtn: UIButton!
     @IBOutlet weak var MarketingAgreeBtn: UIButton!
     @IBOutlet weak var PrivacyAgreeBtn: UIButton!
     @IBOutlet weak var AllagreeBtn: UIButton!
@@ -37,9 +40,29 @@ class RegisterVC: UIViewController {
         MarketingAgreeBtn.isSelected = false
         NextBtn.isSelected = false
         
+        NextBtn.layer.cornerRadius = 12
+        NextBtn.layer.masksToBounds = true
+        
+        
+//        notice = UIView()
+//        
+//        notice.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+//        notice.backgroundColor = .red
+//        view.addSubview(notice)
+        
+        
+        
     }
 
     
+    
+    @IBAction func TapNextBtn(_ sender: Any) {
+        UIManager.shared.viewChangeEvent(.RegisterUserVC, nil)
+    }
+    
+    @IBAction func TapDismiss(_ sender: Any) {
+        UIManager.shared.dismiss(nil, nil, false)
+    }
     
     @objc func TapAllagree(_ sender: UIButton) {
         // Toggle selected state when button is clicked
@@ -112,7 +135,7 @@ class RegisterVC: UIViewController {
         
         
     }
-    
+
     
     
 }

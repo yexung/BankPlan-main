@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0BE0B62BCB99D900B3C564 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0B52BCB99D900B3C564 /* UIManager.swift */; };
+		BB0BE0B92BCB9CED00B3C564 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0B82BCB9CED00B3C564 /* UIApplication+Extensions.swift */; };
+		BB0BE0BB2BCBB61400B3C564 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */; };
+		BB0BE0BD2BCC449700B3C564 /* RegisterSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0BC2BCC449700B3C564 /* RegisterSuccess.swift */; };
 		BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193E932BB9223B00AF8B18 /* AppDelegate.swift */; };
 		BB193E962BB9223B00AF8B18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193E952BB9223B00AF8B18 /* SceneDelegate.swift */; };
 		BB193E982BB9223B00AF8B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193E972BB9223B00AF8B18 /* ViewController.swift */; };
@@ -72,6 +76,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB0BE0B52BCB99D900B3C564 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIManager.swift; path = ../../../Downloads/UIManager.swift; sourceTree = "<group>"; };
+		BB0BE0B82BCB9CED00B3C564 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		BB0BE0BC2BCC449700B3C564 /* RegisterSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccess.swift; sourceTree = "<group>"; };
 		BB193E902BB9223B00AF8B18 /* BankPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB193E932BB9223B00AF8B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB193E952BB9223B00AF8B18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0BE0B72BCB9C9200B3C564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB0BE0B82BCB9CED00B3C564 /* UIApplication+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BB193E872BB9223B00AF8B18 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +185,10 @@
 				BB7F125D2BC040090075D7BC /* RegisterVC.swift */,
 				BB8A56FC2BC26904009ECED0 /* Privacy.swift */,
 				BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */,
+				BB0BE0BC2BCC449700B3C564 /* RegisterSuccess.swift */,
+				BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */,
+				BB0BE0B52BCB99D900B3C564 /* UIManager.swift */,
+				BB0BE0B72BCB9C9200B3C564 /* Extensions */,
 				BBD9E30D2BBF00EB0056D4FD /* Font */,
 			);
 			path = BankPlan;
@@ -382,8 +402,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0BE0B92BCB9CED00B3C564 /* UIApplication+Extensions.swift in Sources */,
 				BB193E982BB9223B00AF8B18 /* ViewController.swift in Sources */,
+				BB0BE0BD2BCC449700B3C564 /* RegisterSuccess.swift in Sources */,
 				BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */,
+				BB0BE0B62BCB99D900B3C564 /* UIManager.swift in Sources */,
+				BB0BE0BB2BCBB61400B3C564 /* MainVC.swift in Sources */,
 				BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */,
 				BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */,
 				BBBF24162BC5A58F00E7EFC0 /* RegisterUserVC.swift in Sources */,
