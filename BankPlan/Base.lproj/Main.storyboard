@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLf-Vt-Lzi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbK-Sq-CmX">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -532,7 +532,7 @@
         <!--홈-->
         <scene sceneID="qxe-fr-yT6">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="DY2-si-yWO" customClass="MainLoginVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="DY2-si-yWO" customClass="MainVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yZj-6i-ht3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -540,6 +540,234 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTU-sw-C7t">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKA-eS-tHd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-ef-FfD">
+                                                <rect key="frame" x="0.0" y="67" width="375" height="630"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOF-7W-Wqo">
+                                                        <rect key="frame" x="16" y="0.0" width="343" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="반갑습니다," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRe-bs-l1u">
+                                                                <rect key="frame" x="8" y="8" width="74" height="20"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="김무식님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nv-my-NBf">
+                                                                <rect key="frame" x="8" y="31" width="84" height="29"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCM-3c-3U1">
+                                                                <rect key="frame" x="303" y="0.0" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="Notification"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNf-lm-Faq">
+                                                        <rect key="frame" x="16" y="80" width="343" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="주식, 가상자산, 부동산 검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeA-Cd-n0T">
+                                                                <rect key="frame" x="44" y="5" width="285" height="34"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="hzj-Jh-H9A">
+                                                                <rect key="frame" x="12" y="10" width="24" height="24"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-br-mxO">
+                                                        <rect key="frame" x="16" y="144" width="343" height="68"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uey-xo-8fD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106" height="68"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAe-Vw-2b7">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="106" height="68"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="TapPinMoneyBtn:" destination="DY2-si-yWO" eventType="touchUpInside" id="tL7-4j-TaV"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PinMoney" translatesAutoresizingMaskIntoConstraints="NO" id="7dX-tt-LaZ">
+                                                                        <rect key="frame" x="41" y="12" width="24" height="24"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="용돈벌기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-IH-tds">
+                                                                        <rect key="frame" x="32" y="40" width="42" height="16"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tD7-ac-QRE">
+                                                                <rect key="frame" x="118" y="0.0" width="106" height="68"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0g-5x-9Jw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="106" height="68"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="TapDividendsCalendar:" destination="DY2-si-yWO" eventType="touchUpInside" id="Pr9-au-T7B"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DividendsCalendar" translatesAutoresizingMaskIntoConstraints="NO" id="LkW-KM-xoY">
+                                                                        <rect key="frame" x="41" y="12" width="24" height="24"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="배당 캘린더" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJf-E7-VSC">
+                                                                        <rect key="frame" x="25" y="40" width="57" height="16"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ok-8S-Ua5">
+                                                                <rect key="frame" x="236" y="0.0" width="106" height="68"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ClosedDays" translatesAutoresizingMaskIntoConstraints="NO" id="1Xc-IB-sXe">
+                                                                        <rect key="frame" x="41" y="12" width="24" height="24"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="휴장일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6K-8y-CDv">
+                                                                        <rect key="frame" x="37" y="40" width="32" height="16"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHj-Zz-wyY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="106" height="68"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                                        <connections>
+                                                                            <action selector="TapClosedDays:" destination="DY2-si-yWO" eventType="touchUpInside" id="o6G-9q-Wtt"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R7n-Db-VPN">
+                                                        <rect key="frame" x="16" y="232" width="343" height="80"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="광고입점 예정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWg-Td-Cp6">
+                                                                <rect key="frame" x="125" y="30" width="93" height="21"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="Neutral-70"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nl-I1-Wtg">
+                                                        <rect key="frame" x="16" y="332" width="343" height="298"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l68-Ds-lNH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="86"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quh-Dm-0aj">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="환율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9a-tU-MLH">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="35" height="24"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoDetail" translatesAutoresizingMaskIntoConstraints="NO" id="5ZJ-gc-I7f">
+                                                                                <rect key="frame" x="323" y="0.0" width="20" height="20"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="Neutral-95"/>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-vS-TGI">
+                                                                <rect key="frame" x="0.0" y="126" width="343" height="172"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mne-WE-Ixl">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="거시경제 동향" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8b-ag-n66">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="109" height="24"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoDetail" translatesAutoresizingMaskIntoConstraints="NO" id="Lfb-lK-RQx">
+                                                                                <rect key="frame" x="323" y="0.0" width="20" height="20"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="Neutral-95"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Neutral-95"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Neutral-95"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="729" id="IOW-wa-Lsf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CKA-eS-tHd" firstAttribute="top" secondItem="aXh-lW-qcf" secondAttribute="top" id="4Vw-SA-8to"/>
+                                    <constraint firstItem="CKA-eS-tHd" firstAttribute="bottom" secondItem="aXh-lW-qcf" secondAttribute="bottom" id="Ccv-j7-gP8"/>
+                                    <constraint firstItem="aXh-lW-qcf" firstAttribute="leading" secondItem="CKA-eS-tHd" secondAttribute="leading" id="HRF-GC-jAW"/>
+                                    <constraint firstItem="CKA-eS-tHd" firstAttribute="width" secondItem="cjd-Cg-E7V" secondAttribute="width" id="o7g-cx-I79"/>
+                                    <constraint firstItem="CKA-eS-tHd" firstAttribute="trailing" secondItem="aXh-lW-qcf" secondAttribute="trailing" id="rDN-sW-vAU"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="aXh-lW-qcf"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="cjd-Cg-E7V"/>
                             </scrollView>
@@ -548,10 +776,133 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="EVW-tK-dsw"/>
+                    <connections>
+                        <outlet property="AdsView" destination="R7n-Db-VPN" id="hfv-rU-8Tw"/>
+                        <outlet property="ClosedDays" destination="sHj-Zz-wyY" id="Bg7-rp-zCU"/>
+                        <outlet property="ClosedDaysBtn" destination="sHj-Zz-wyY" id="PIr-vR-SzI"/>
+                        <outlet property="DividendsCalendarBtn" destination="x0g-5x-9Jw" id="Bgn-yF-ckO"/>
+                        <outlet property="DividendsCalendarView" destination="tD7-ac-QRE" id="4Jh-bX-Y6U"/>
+                        <outlet property="PinMoneyBtn" destination="LAe-Vw-2b7" id="U2t-h2-hc2"/>
+                        <outlet property="PinMoneyView" destination="Uey-xo-8fD" id="r4c-1l-p5D"/>
+                        <outlet property="SearchView" destination="mNf-lm-Faq" id="Fcw-He-hYH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cH-XG-lVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156" y="739.65517241379314"/>
+        </scene>
+        <!--Pin MoneyVC-->
+        <scene sceneID="0HW-QW-eKe">
+            <objects>
+                <viewController storyboardIdentifier="PinMoneyVC" id="z5D-i2-K9C" customClass="PinMoneyVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0br-87-5dJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hn-P5-aMS">
+                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbt-34-LCh">
+                                        <rect key="frame" x="16" y="15" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Dismiss"/>
+                                        <connections>
+                                            <action selector="TapDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rkb-os-jm5"/>
+                                            <action selector="TapDismiss:" destination="z5D-i2-K9C" eventType="touchUpInside" id="f4o-gM-dHP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a2G-HJ-C4s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dismiss" destination="Tbt-34-LCh" id="Tag-ku-PBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxI-c7-DcK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="740"/>
+        </scene>
+        <!--Dividends CalendarVC-->
+        <scene sceneID="FhY-nI-XOe">
+            <objects>
+                <viewController storyboardIdentifier="DividendsCalendarVC" id="sPb-Un-zD7" customClass="DividendsCalendarVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8p-ek-KRB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-8L-UUb">
+                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbY-eI-IRK">
+                                        <rect key="frame" x="16" y="15" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Dismiss"/>
+                                        <connections>
+                                            <action selector="TapDismiss:" destination="sPb-Un-zD7" eventType="touchUpInside" id="2Hd-9w-xxe"/>
+                                            <action selector="TapDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfC-F7-mhX"/>
+                                            <action selector="TapDismiss:" destination="z5D-i2-K9C" eventType="touchUpInside" id="rD6-1p-dSx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Q7-w9-mCa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dismiss" destination="RbY-eI-IRK" id="Fle-9N-uRi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5L-zl-lJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="740"/>
+        </scene>
+        <!--Closed Days-->
+        <scene sceneID="eN6-TL-lGu">
+            <objects>
+                <viewController storyboardIdentifier="ClosedDays" id="F1c-BA-n9a" customClass="ClosedDays" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JBq-oT-avK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-3V-rX3">
+                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2K-p0-vOM">
+                                        <rect key="frame" x="16" y="15" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Dismiss"/>
+                                        <connections>
+                                            <action selector="TapDismiss:" destination="z5D-i2-K9C" eventType="touchUpInside" id="CyO-8k-PHy"/>
+                                            <action selector="TapDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6b-1J-vST"/>
+                                            <action selector="TapDismiss:" destination="F1c-BA-n9a" eventType="touchUpInside" id="uEE-yJ-F1j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aHJ-22-p81"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dismiss" destination="Y2K-p0-vOM" id="ea0-E2-WWg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5kf-a6-bMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044" y="740"/>
         </scene>
         <!--내자산-->
         <scene sceneID="4Gx-PL-xTk">
@@ -609,7 +960,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="Neutral-90"/>
+                        <color key="barTintColor" name="Neutral-100"/>
                     </tabBar>
                     <connections>
                         <segue destination="DY2-si-yWO" kind="relationship" relationship="viewControllers" id="R39-Rn-tmZ"/>
@@ -620,7 +971,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJ9-CU-Egc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1230" y="896"/>
+            <point key="canvasLocation" x="-927" y="740"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="hkN-Se-qqS">
@@ -691,17 +1042,23 @@
         <image name="Allagree" width="343" height="48"/>
         <image name="AllagreeSuccess" width="343" height="48"/>
         <image name="AppleLogin" width="295" height="52"/>
+        <image name="ClosedDays" width="24.333333969116211" height="24"/>
         <image name="Dismiss" width="24" height="24"/>
+        <image name="DividendsCalendar" width="24.333333969116211" height="24"/>
         <image name="DividerLogin" width="204.33332824707031" height="16"/>
         <image name="FaceBookLogin" width="48.333332061767578" height="48"/>
+        <image name="GoDetail" width="20" height="20"/>
         <image name="GoogleLogin" width="48.333332061767578" height="48"/>
         <image name="KakaoLogin" width="295" height="52"/>
         <image name="LoginFrame" width="375" height="403"/>
         <image name="LookBtn" width="22.666666030883789" height="12.666666984558105"/>
         <image name="MarketingAgree" width="343" height="48"/>
         <image name="MarketingAgreeSuccess" width="343" height="48"/>
+        <image name="Notification" width="32" height="32"/>
+        <image name="PinMoney" width="24.333333969116211" height="24"/>
         <image name="PrivacyAgree" width="343" height="48"/>
         <image name="PrivacyAgreeSuccess" width="343" height="48"/>
+        <image name="Search" width="24" height="24"/>
         <image name="Success" width="80.333335876464844" height="80"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="house" catalog="system" width="128" height="104"/>
@@ -718,6 +1075,9 @@
         </namedColor>
         <namedColor name="Neutral-90">
             <color red="0.92549019607843142" green="0.93333333333333335" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Neutral-95">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Primary-50">
             <color red="0.25490196078431371" green="0.23921568627450981" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

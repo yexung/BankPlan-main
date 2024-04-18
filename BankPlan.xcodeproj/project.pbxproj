@@ -27,6 +27,9 @@
 		BB193ECF2BB935F100AF8B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB193ECE2BB935F100AF8B18 /* GoogleService-Info.plist */; };
 		BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */; };
 		BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F125D2BC040090075D7BC /* RegisterVC.swift */; };
+		BB895EA22BD16F6800A98E8D /* PinMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB895EA12BD16F6800A98E8D /* PinMoneyVC.swift */; };
+		BB895EA42BD171D800A98E8D /* DividendsCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB895EA32BD171D800A98E8D /* DividendsCalendarVC.swift */; };
+		BB895EA62BD171F000A98E8D /* ClosedDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB895EA52BD171F000A98E8D /* ClosedDays.swift */; };
 		BB8A56FD2BC26904009ECED0 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8A56FC2BC26904009ECED0 /* Privacy.swift */; };
 		BBBF24162BC5A58F00E7EFC0 /* RegisterUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */; };
 		BBD9E3172BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
@@ -98,6 +101,9 @@
 		BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginVC.swift; sourceTree = "<group>"; };
 		BB4AC99B2BBC661E00284B20 /* BankPlan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BankPlan.entitlements; sourceTree = "<group>"; };
 		BB7F125D2BC040090075D7BC /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		BB895EA12BD16F6800A98E8D /* PinMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinMoneyVC.swift; sourceTree = "<group>"; };
+		BB895EA32BD171D800A98E8D /* DividendsCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividendsCalendarVC.swift; sourceTree = "<group>"; };
+		BB895EA52BD171F000A98E8D /* ClosedDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedDays.swift; sourceTree = "<group>"; };
 		BB8A56FC2BC26904009ECED0 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserVC.swift; sourceTree = "<group>"; };
 		BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
@@ -187,7 +193,10 @@
 				BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */,
 				BB0BE0BC2BCC449700B3C564 /* RegisterSuccess.swift */,
 				BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */,
+				BB895EA12BD16F6800A98E8D /* PinMoneyVC.swift */,
 				BB0BE0B52BCB99D900B3C564 /* UIManager.swift */,
+				BB895EA32BD171D800A98E8D /* DividendsCalendarVC.swift */,
+				BB895EA52BD171F000A98E8D /* ClosedDays.swift */,
 				BB0BE0B72BCB9C9200B3C564 /* Extensions */,
 				BBD9E30D2BBF00EB0056D4FD /* Font */,
 			);
@@ -408,9 +417,12 @@
 				BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */,
 				BB0BE0B62BCB99D900B3C564 /* UIManager.swift in Sources */,
 				BB0BE0BB2BCBB61400B3C564 /* MainVC.swift in Sources */,
+				BB895EA62BD171F000A98E8D /* ClosedDays.swift in Sources */,
 				BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */,
 				BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */,
 				BBBF24162BC5A58F00E7EFC0 /* RegisterUserVC.swift in Sources */,
+				BB895EA42BD171D800A98E8D /* DividendsCalendarVC.swift in Sources */,
+				BB895EA22BD16F6800A98E8D /* PinMoneyVC.swift in Sources */,
 				BB193EC92BB92A5500AF8B18 /* LoginVC.swift in Sources */,
 				BB193E962BB9223B00AF8B18 /* SceneDelegate.swift in Sources */,
 				BB8A56FD2BC26904009ECED0 /* Privacy.swift in Sources */,

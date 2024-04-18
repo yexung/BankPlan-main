@@ -10,25 +10,43 @@ import UIKit
 class MainVC: UIViewController {
 
     
-    @IBOutlet var sc :UIScrollView!
+    @IBOutlet weak var SearchView: UIView!
+    @IBOutlet weak var PinMoneyView: UIView!
+    @IBOutlet weak var DividendsCalendarView: UIView!
+    @IBOutlet weak var ClosedDays: UIView!
+    @IBOutlet weak var AdsView: UIView!
+    
+    @IBOutlet weak var PinMoneyBtn: UIButton!
+    @IBOutlet weak var DividendsCalendarBtn: UIButton!
+    @IBOutlet weak var ClosedDaysBtn: UIButton!
+    
+    @IBAction func TapPinMoneyBtn(_ sender: Any) {
+        UIManager.shared.viewChangeEvent(.PinMoneyVC, nil)
+    }
+    
+    @IBAction func TapDividendsCalendar(_ sender: Any) {
+        UIManager.shared.viewChangeEvent(.DividendsCalendarVC, nil)
+        
+    }
+    @IBAction func TapClosedDays(_ sender: Any) {
+        UIManager.shared.viewChangeEvent(.ClosedDays, nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        SearchView.layer.cornerRadius = 12
+        SearchView.layer.masksToBounds = true
         
+        PinMoneyView.layer.cornerRadius = 12
+        PinMoneyView.layer.masksToBounds = true
+        DividendsCalendarView.layer.cornerRadius = 12
+        DividendsCalendarView.layer.masksToBounds = true
+        ClosedDays.layer.cornerRadius = 12
+        ClosedDays.layer.masksToBounds = true
+        AdsView.layer.cornerRadius = 12
+        AdsView.layer.masksToBounds = true
         
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
