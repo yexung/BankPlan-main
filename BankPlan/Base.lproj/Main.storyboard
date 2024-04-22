@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbK-Sq-CmX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DY2-si-yWO">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -420,6 +420,115 @@
             </objects>
             <point key="canvasLocation" x="1340" y="-946"/>
         </scene>
+        <!--Exchange RateVC-->
+        <scene sceneID="nN7-TR-CTX">
+            <objects>
+                <viewController storyboardIdentifier="ExchangeRateVC" id="1Bs-d1-Qhm" customClass="ExchangeRateVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJT-SL-3gE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhL-Yq-j45">
+                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clj-x5-0cp">
+                                        <rect key="frame" x="16" y="15" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Dismiss"/>
+                                        <connections>
+                                            <action selector="TapDismiss:" destination="z5D-i2-K9C" eventType="touchUpInside" id="1za-40-34Q"/>
+                                            <action selector="TapDismiss:" destination="YHD-0a-i2o" eventType="touchUpInside" id="8QA-2u-WPv"/>
+                                            <action selector="TapDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ap6-NF-wGp"/>
+                                            <action selector="TapDismiss:" destination="F1c-BA-n9a" eventType="touchUpInside" id="xRT-aZ-iHX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxc-HL-EZK">
+                                        <rect key="frame" x="166" y="17" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Neutral-95"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PgX-lF-SS2">
+                                <rect key="frame" x="0.0" y="101" width="375" height="678"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAT-dH-ThR">
+                                        <rect key="frame" x="16" y="16" width="343" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="오늘 19:63 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gJ-vd-Awb">
+                                                <rect key="frame" x="262" y="0.0" width="81" height="15"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Neutral-95"/>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dNR-l2-U6c">
+                                        <rect key="frame" x="16" y="42" width="343" height="538"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="Neutral-95"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyCell" id="EUP-na-HWj" customClass="CurrencyCell" customModule="BankPlan" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="343" height="44.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EUP-na-HWj" id="9WD-7C-rlx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqC-mR-Vqu">
+                                                            <rect key="frame" x="70" y="38" width="181" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qM-zh-m7f">
+                                                            <rect key="frame" x="255" y="37" width="88" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ0-4B-3O2">
+                                                            <rect key="frame" x="70" y="11" width="35" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="detailLabel" destination="0qM-zh-m7f" id="UYh-tb-WsP"/>
+                                                    <outlet property="mainLabel" destination="HqC-mR-Vqu" id="iaU-iB-Nrc"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" name="Neutral-95"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lci-n3-dSn"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
+                    </view>
+                    <connections>
+                        <outlet property="exchangeRateTableView" destination="dNR-l2-U6c" id="bdk-kR-9QT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAk-Ea-dmn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-922.39999999999998" y="56.896551724137936"/>
+        </scene>
         <!--Main LoginVC-->
         <scene sceneID="1lD-m9-pEQ">
             <objects>
@@ -571,6 +680,9 @@
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="Notification"/>
+                                                                <connections>
+                                                                    <action selector="TapNotification:" destination="DY2-si-yWO" eventType="touchUpInside" id="TWw-Jf-fax"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="Neutral-95"/>
@@ -713,10 +825,15 @@
                                                                                 <nil key="textColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoDetail" translatesAutoresizingMaskIntoConstraints="NO" id="5ZJ-gc-I7f">
+                                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-Vi-eQ6">
                                                                                 <rect key="frame" x="323" y="0.0" width="20" height="20"/>
                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            </imageView>
+                                                                                <state key="normal" title="Button"/>
+                                                                                <buttonConfiguration key="configuration" style="plain" image="GoDetail"/>
+                                                                                <connections>
+                                                                                    <action selector="TapExchangeBtn:" destination="DY2-si-yWO" eventType="touchUpInside" id="wfH-KF-bXM"/>
+                                                                                </connections>
+                                                                            </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" name="Neutral-95"/>
                                                                     </view>
@@ -782,6 +899,8 @@
                         <outlet property="ClosedDaysBtn" destination="sHj-Zz-wyY" id="PIr-vR-SzI"/>
                         <outlet property="DividendsCalendarBtn" destination="x0g-5x-9Jw" id="Bgn-yF-ckO"/>
                         <outlet property="DividendsCalendarView" destination="tD7-ac-QRE" id="4Jh-bX-Y6U"/>
+                        <outlet property="ExchangeRateBtn" destination="r4p-Vi-eQ6" id="Vfn-R6-5Pr"/>
+                        <outlet property="NotificationBtn" destination="vCM-3c-3U1" id="Nqw-Br-Shf"/>
                         <outlet property="PinMoneyBtn" destination="LAe-Vw-2b7" id="U2t-h2-hc2"/>
                         <outlet property="PinMoneyView" destination="Uey-xo-8fD" id="r4c-1l-p5D"/>
                         <outlet property="SearchView" destination="mNf-lm-Faq" id="Fcw-He-hYH"/>
@@ -814,11 +933,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Neutral-95"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a2G-HJ-C4s"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
                     </view>
                     <connections>
                         <outlet property="Dismiss" destination="Tbt-34-LCh" id="Tag-ku-PBr"/>
@@ -852,11 +971,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Neutral-95"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Q7-w9-mCa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
                     </view>
                     <connections>
                         <outlet property="Dismiss" destination="RbY-eI-IRK" id="Fle-9N-uRi"/>
@@ -875,7 +994,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-3V-rX3">
-                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2K-p0-vOM">
@@ -890,11 +1009,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Neutral-95"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aHJ-22-p81"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
                     </view>
                     <connections>
                         <outlet property="Dismiss" destination="Y2K-p0-vOM" id="ea0-E2-WWg"/>
@@ -902,7 +1021,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5kf-a6-bMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2044" y="740"/>
+            <point key="canvasLocation" x="2006" y="740"/>
+        </scene>
+        <!--NotificationVC-->
+        <scene sceneID="eof-sg-htW">
+            <objects>
+                <viewController storyboardIdentifier="NotificationVC" id="YHD-0a-i2o" customClass="NotificationVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ppE-2j-Sge">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xy-p0-Cat">
+                                <rect key="frame" x="0.0" y="47" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU4-fE-duX">
+                                        <rect key="frame" x="16" y="15" width="24" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Dismiss"/>
+                                        <connections>
+                                            <action selector="TapDismiss:" destination="F1c-BA-n9a" eventType="touchUpInside" id="22W-dL-5W5"/>
+                                            <action selector="TapDismiss:" destination="YHD-0a-i2o" eventType="touchUpInside" id="VCz-tI-Beu"/>
+                                            <action selector="TapDismiss:" destination="z5D-i2-K9C" eventType="touchUpInside" id="e4J-RM-uK2"/>
+                                            <action selector="TapDismiss:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdJ-aS-gf4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="css-6j-kpc">
+                                        <rect key="frame" x="166" y="17" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Neutral-95"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XIr-5S-0P3"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dismiss" destination="gU4-fE-duX" id="InL-se-o5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCR-Y7-itZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708" y="740"/>
         </scene>
         <!--내자산-->
         <scene sceneID="4Gx-PL-xTk">
@@ -927,8 +1092,31 @@
                     <view key="view" contentMode="scaleToFill" id="o7L-mB-Blx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0AX-mm-v3W">
+                                <rect key="frame" x="0.0" y="67" width="375" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zE-N7-a1v">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AI 추천" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFl-5s-iXV">
+                                                <rect key="frame" x="0.0" y="0.0" width="68" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Neutral-95"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="Neutral-95"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3rg-IV-7zJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AI추천" image="star" catalog="system" id="QdU-Hc-uNP"/>
                 </viewController>
@@ -943,8 +1131,37 @@
                     <view key="view" contentMode="scaleToFill" id="Wqa-UG-clU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3v-F4-gE4">
+                                <rect key="frame" x="0.0" y="67" width="375" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBF-W9-RmK">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEB-VV-ixv">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNd-ua-PpT">
+                                                        <rect key="frame" x="259" y="0.0" width="40" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Notification"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="Neutral-95"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="Neutral-95"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hzh-5t-hFt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Neutral-95"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="전체" image="gearshape.fill" catalog="system" id="zaS-dd-Cpc"/>
                 </viewController>

@@ -9,6 +9,10 @@ import UIKit
 
 class NotificationVC: UIViewController {
 
+    @IBOutlet weak var Dismiss: UIButton!
+    @IBAction func TapDismiss(_ sender: Any) {
+        UIManager.shared.dismiss(self, nil, false)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
