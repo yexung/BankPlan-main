@@ -202,9 +202,9 @@
 				BB0BE0B52BCB99D900B3C564 /* UIManager.swift */,
 				BB895EA32BD171D800A98E8D /* DividendsCalendarVC.swift */,
 				BB895EA52BD171F000A98E8D /* ClosedDays.swift */,
+				BB895EAC2BD5F1E100A98E8D /* ExchangeRateVC.swift */,
 				BB0BE0B72BCB9C9200B3C564 /* Extensions */,
 				BBD9E30D2BBF00EB0056D4FD /* Font */,
-				BB895EAC2BD5F1E100A98E8D /* ExchangeRateVC.swift */,
 			);
 			path = BankPlan;
 			sourceTree = "<group>";
