@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MarqueeLabel
 
 class MainVC: UIViewController {
 
@@ -21,6 +22,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var ClosedDaysBtn: UIButton!
     @IBOutlet weak var ExchangeRateBtn: UIButton!
     
+    @IBOutlet weak var ExchangeRateLoop: MarqueeLabel!
     @IBAction func TapPinMoneyBtn(_ sender: Any) {
         UIManager.shared.viewChangeEvent(.PinMoneyVC, nil)
     }
@@ -57,3 +59,5 @@ class MainVC: UIViewController {
     }
 
 }
+
+//TODO: 환율 반복되는거 컨스트레인트, 휴장일 UI구현 고민, Cell 설정 고민, tab bar 디자인 커스텀

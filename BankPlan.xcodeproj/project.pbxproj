@@ -34,6 +34,8 @@
 		BB895EAD2BD5F1E100A98E8D /* ExchangeRateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB895EAC2BD5F1E100A98E8D /* ExchangeRateVC.swift */; };
 		BB8A56FD2BC26904009ECED0 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8A56FC2BC26904009ECED0 /* Privacy.swift */; };
 		BBBF24162BC5A58F00E7EFC0 /* RegisterUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */; };
+		BBC06CA62BDD35ED00CEF3EA /* MarqueeLabel in Frameworks */ = {isa = PBXBuildFile; productRef = BBC06CA52BDD35ED00CEF3EA /* MarqueeLabel */; };
+		BBC06CA82BDD412500CEF3EA /* RecommedaiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC06CA72BDD412500CEF3EA /* RecommedaiVC.swift */; };
 		BBD9E3172BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
 		BBD9E3182BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
 		BBD9E3192BBF01580056D4FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */; };
@@ -110,6 +112,7 @@
 		BB895EAC2BD5F1E100A98E8D /* ExchangeRateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateVC.swift; sourceTree = "<group>"; };
 		BB8A56FC2BC26904009ECED0 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserVC.swift; sourceTree = "<group>"; };
+		BBC06CA72BDD412500CEF3EA /* RecommedaiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommedaiVC.swift; sourceTree = "<group>"; };
 		BBD9E30E2BBF01570056D4FD /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		BBD9E30F2BBF01570056D4FD /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		BBD9E3102BBF01570056D4FD /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC06CA62BDD35ED00CEF3EA /* MarqueeLabel in Frameworks */,
 				BB193ECD2BB92F5D00AF8B18 /* Alamofire in Frameworks */,
 				BB193EC52BB9265300AF8B18 /* FirebaseAuth in Frameworks */,
 				BB193EC72BB9265300AF8B18 /* FirebaseAuthCombine-Community in Frameworks */,
@@ -203,6 +207,7 @@
 				BB895EA32BD171D800A98E8D /* DividendsCalendarVC.swift */,
 				BB895EA52BD171F000A98E8D /* ClosedDays.swift */,
 				BB895EAC2BD5F1E100A98E8D /* ExchangeRateVC.swift */,
+				BBC06CA72BDD412500CEF3EA /* RecommedaiVC.swift */,
 				BB0BE0B72BCB9C9200B3C564 /* Extensions */,
 				BBD9E30D2BBF00EB0056D4FD /* Font */,
 			);
@@ -269,6 +274,7 @@
 				BB193EC42BB9265300AF8B18 /* FirebaseAuth */,
 				BB193EC62BB9265300AF8B18 /* FirebaseAuthCombine-Community */,
 				BB193ECC2BB92F5D00AF8B18 /* Alamofire */,
+				BBC06CA52BDD35ED00CEF3EA /* MarqueeLabel */,
 			);
 			productName = BankPlan;
 			productReference = BB193E902BB9223B00AF8B18 /* BankPlan.app */;
@@ -345,6 +351,7 @@
 			packageReferences = (
 				BB193EC32BB9265300AF8B18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				BB193ECA2BB92E7D00AF8B18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BBFC0E3F2BDD2E4900038891 /* XCRemoteSwiftPackageReference "MarqueeLabel" */,
 			);
 			productRefGroup = BB193E912BB9223B00AF8B18 /* Products */;
 			projectDirPath = "";
@@ -417,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC06CA82BDD412500CEF3EA /* RecommedaiVC.swift in Sources */,
 				BB0BE0B92BCB9CED00B3C564 /* UIApplication+Extensions.swift in Sources */,
 				BB193E982BB9223B00AF8B18 /* ViewController.swift in Sources */,
 				BB0BE0BD2BCC449700B3C564 /* RegisterSuccess.swift in Sources */,
@@ -796,6 +804,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		BBFC0E3F2BDD2E4900038891 /* XCRemoteSwiftPackageReference "MarqueeLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbpowell/MarqueeLabel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -813,6 +829,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BB193ECA2BB92E7D00AF8B18 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		BBC06CA52BDD35ED00CEF3EA /* MarqueeLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBFC0E3F2BDD2E4900038891 /* XCRemoteSwiftPackageReference "MarqueeLabel" */;
+			productName = MarqueeLabel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

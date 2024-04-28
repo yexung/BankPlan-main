@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLf-Vt-Lzi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbK-Sq-CmX">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -411,14 +411,31 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="PrivacyLook" id="hu2-fe-mVz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇸 미국 USD, 1,339.50 🔺0.1%    🇨🇳 중국 CNY 186.43 🔹0.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WER-BZ-AJC" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="0.0" y="60" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="49X-Vr-DIe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3OK-hc-1Vv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WER-BZ-AJC" firstAttribute="top" secondItem="3OK-hc-1Vv" secondAttribute="top" constant="10" id="0MU-Va-kaj"/>
+                            <constraint firstItem="3OK-hc-1Vv" firstAttribute="bottom" secondItem="WER-BZ-AJC" secondAttribute="bottom" constant="697" id="ZFG-2i-qxX"/>
+                            <constraint firstItem="WER-BZ-AJC" firstAttribute="leading" secondItem="3OK-hc-1Vv" secondAttribute="leading" id="jLI-aJ-S5n"/>
+                            <constraint firstItem="WER-BZ-AJC" firstAttribute="trailing" secondItem="3OK-hc-1Vv" secondAttribute="trailing" id="wmo-ZJ-Y8s"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IRt-IY-Mya"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xkb-Dr-qgu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="-946"/>
+            <point key="canvasLocation" x="-119.2" y="-616.25615763546796"/>
         </scene>
         <!--Exchange RateVC-->
         <scene sceneID="nN7-TR-CTX">
@@ -820,6 +837,20 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="86"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
+                                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57A-xA-tmk" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                                        <rect key="frame" x="-16" y="17" width="375" height="52"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🇺🇸 미국 USD, 1,339.50 🔺0.1%    🇨🇳 중국 CNY 186.43 🔹0.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bal-r8-Nyj" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                                                <rect key="frame" x="0.0" y="18" width="375" height="17"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                                    </view>
                                                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quh-Dm-0aj">
                                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -906,6 +937,7 @@
                         <outlet property="DividendsCalendarBtn" destination="x0g-5x-9Jw" id="Bgn-yF-ckO"/>
                         <outlet property="DividendsCalendarView" destination="tD7-ac-QRE" id="4Jh-bX-Y6U"/>
                         <outlet property="ExchangeRateBtn" destination="r4p-Vi-eQ6" id="Vfn-R6-5Pr"/>
+                        <outlet property="ExchangeRateLoop" destination="bal-r8-Nyj" id="8qr-40-JSK"/>
                         <outlet property="NotificationBtn" destination="vCM-3c-3U1" id="Nqw-Br-Shf"/>
                         <outlet property="PinMoneyBtn" destination="LAe-Vw-2b7" id="U2t-h2-hc2"/>
                         <outlet property="PinMoneyView" destination="Uey-xo-8fD" id="r4c-1l-p5D"/>
@@ -1241,6 +1273,92 @@
                                         </subviews>
                                         <color key="backgroundColor" name="Neutral-95"/>
                                     </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-ks-oLx">
+                                        <rect key="frame" x="16" y="52" width="343" height="552"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="et7-r4-LNF">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="552"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" name="Neutral-95"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Recommed" id="Z62-17-isJ" customClass="RecommedCell" customModule="BankPlan" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="50" width="343" height="70"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RecommedCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z62-17-isJ" id="74a-0I-Scs" customClass="RecommedCell" customModule="BankPlan" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="112,800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-Aw-38j">
+                                                                    <rect key="frame" x="68" y="34" width="66" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="삼성전자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnk-7S-YCZ">
+                                                                    <rect key="frame" x="70" y="17" width="42" height="15"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SamsungLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-kJ-rPD">
+                                                                    <rect key="frame" x="16" y="17" width="36" height="36"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.26%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f74-eF-EpQ">
+                                                                    <rect key="frame" x="142" y="34" width="88" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" systemColor="systemPinkColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="005930" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOb-kF-H2h">
+                                                                    <rect key="frame" x="120" y="17" width="46" height="15"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" name="Neutral-40"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시가배당률 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs0-V3-MPO">
+                                                                    <rect key="frame" x="271" y="17" width="56" height="15"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" name="Neutral-40"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.45%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kj-3J-qG7">
+                                                                    <rect key="frame" x="277" y="34" width="50" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="MarketOdds" destination="Vs0-V3-MPO" id="das-W8-M4l"/>
+                                                                <outlet property="MarketOddsRiseRate" destination="3kj-3J-qG7" id="AdQ-xe-wTM"/>
+                                                                <outlet property="Price" destination="yQd-Aw-38j" id="wnU-yF-9Mf"/>
+                                                                <outlet property="RiseRate" destination="f74-eF-EpQ" id="2T4-QQ-O6Q"/>
+                                                                <outlet property="StockCode" destination="EOb-kF-H2h" id="4yv-Mq-ay8"/>
+                                                                <outlet property="StockName" destination="Cnk-7S-YCZ" id="hoe-f1-fnG"/>
+                                                            </connections>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="MarketOdds" destination="Vs0-V3-MPO" id="RxQ-0s-OAT"/>
+                                                            <outlet property="MarketOddsRiseRate" destination="3kj-3J-qG7" id="bUX-Eq-zdz"/>
+                                                            <outlet property="Price" destination="yQd-Aw-38j" id="v6I-ov-9sw"/>
+                                                            <outlet property="RiseRate" destination="f74-eF-EpQ" id="adj-Lt-XI5"/>
+                                                            <outlet property="StockCode" destination="EOb-kF-H2h" id="Ve5-8z-J1p"/>
+                                                            <outlet property="StockName" destination="Cnk-7S-YCZ" id="cea-5M-87j"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" name="Neutral-95"/>
                             </view>
@@ -1252,7 +1370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbc-pI-2cX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="2063"/>
+            <point key="canvasLocation" x="-156" y="2062.3152709359606"/>
         </scene>
         <!--전체-->
         <scene sceneID="3YM-gc-qd3">
@@ -1382,9 +1500,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wui-fj-YG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="-683"/>
+            <point key="canvasLocation" x="-198" y="-1649"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="WER-BZ-AJC">
+            <size key="intrinsicContentSize" width="470" height="20.333333333333332"/>
+        </designable>
+        <designable name="bal-r8-Nyj">
+            <size key="intrinsicContentSize" width="399.66666666666669" height="17"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Allagree" width="343" height="48"/>
         <image name="AllagreeSuccess" width="343" height="48"/>
@@ -1407,6 +1533,7 @@
         <image name="PinMoney" width="24.333333969116211" height="24"/>
         <image name="PrivacyAgree" width="343" height="48"/>
         <image name="PrivacyAgreeSuccess" width="343" height="48"/>
+        <image name="SamsungLogo" width="38" height="38"/>
         <image name="Search" width="24" height="24"/>
         <image name="Success" width="80.333335876464844" height="80"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
@@ -1441,7 +1568,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MarqueeLabel
 
 class Privacy: UIViewController {
 

@@ -163,7 +163,7 @@ extension MainLoginVC: ASAuthorizationControllerDelegate {
                 if let newUser = authResult?.additionalUserInfo?.isNewUser, newUser {
                     UIManager.shared.viewChangeEvent(.RegisterVC, nil) // 새 사용자는 등록 화면으로
                 } else {
-                    UIManager.shared.viewChangeEvent(.MainVC, nil)  // 기존 사용자는 메인 화면으로
+                   UIManager.shared.viewChangeEvent(.MainVC, nil)  // 기존 사용자는 메인 화면으로
                 }
             }
         }
