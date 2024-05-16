@@ -11,6 +11,7 @@ class TabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setValue(TabBar(), forKey: "tabBar")
 
         // Do any additional setup after loading the view.
     }

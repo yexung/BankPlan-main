@@ -1417,11 +1417,11 @@
             </objects>
             <point key="canvasLocation" x="-156" y="2738"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="FV5-he-gqd">
             <objects>
-                <tabBarController id="xbK-Sq-CmX" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dvH-oO-RKS">
+                <tabBarController id="xbK-Sq-CmX" customClass="TabBarVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dvH-oO-RKS" customClass="TabBar" customModule="BankPlan" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1537,8 +1537,8 @@
         <image name="Search" width="24" height="24"/>
         <image name="Success" width="80.333335876464844" height="80"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
-        <image name="house" catalog="system" width="128" height="104"/>
-        <image name="photo.circle" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="32" height="32"/>
+        <image name="photo.circle" catalog="system" width="32" height="32"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
