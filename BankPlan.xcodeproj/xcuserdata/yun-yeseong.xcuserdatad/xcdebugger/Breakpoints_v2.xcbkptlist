@@ -18,36 +18,6 @@
             endingLineNumber = "140"
             landmarkName = "authorizationController(controller:didCompleteWithAuthorization:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AF593019-152E-4050-BB18-9F44A5CCAF8D - d6076fcaa2021c49"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BankPlan.MainLoginVC.authorizationController(controller: __C.ASAuthorizationController, didCompleteWithAuthorization: __C.ASAuthorization) -&gt; ()"
-                  moduleName = "BankPlan"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yeseong/Desktop/BankPlan-main/BankPlan/MainLoginVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140">
-               </Location>
-               <Location
-                  uuid = "AF593019-152E-4050-BB18-9F44A5CCAF8D - d6076fcaa2021c49"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BankPlan.MainLoginVC.authorizationController(controller: __C.ASAuthorizationController, didCompleteWithAuthorization: __C.ASAuthorization) -&gt; ()"
-                  moduleName = "BankPlan"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yun-yeseong/Desktop/BankPlan-main/BankPlan/MainLoginVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "140"
-                  endingLineNumber = "140">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

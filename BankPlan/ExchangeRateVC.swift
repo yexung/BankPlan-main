@@ -16,6 +16,24 @@ class ExchangeRateCell: UITableViewCell {
     @IBOutlet weak var CurrencyCodeText: UILabel!
     @IBOutlet weak var ExchangeRateText: UILabel!
     @IBOutlet weak var RiseRateText: UILabel!
+    
+    @IBOutlet weak var CellView: UIView!
+    
+    
+override func awakeFromNib() {
+    
+//            super.awakeFromNib()
+//            // Set the corner radius for the cell's content view
+    CellView.layer.cornerRadius = 12
+    CellView.layer.masksToBounds = true
+//
+//            // Optionally, set a border to see the rounded corners clearly
+//            contentView.layer.borderWidth = 1.0
+//            contentView.layer.borderColor = UIColor.lightGray.cgColor
+//
+//            // Set the background color to clear
+//        backgroundColor = .yellow
+        }
 }
 
 class ExchangeRateVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -55,7 +73,7 @@ class ExchangeRateVC: UIViewController, UITableViewDataSource, UITableViewDelega
         self.dismiss(animated: true, completion: nil)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 78
     }
 }
 
