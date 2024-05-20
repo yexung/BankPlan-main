@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -560,6 +561,7 @@
                     </view>
                     <connections>
                         <outlet property="ExchangeRateTableView" destination="dNR-l2-U6c" id="I25-8A-s8O"/>
+                        <outlet property="Time" destination="4gJ-vd-Awb" id="TMT-jj-lU5"/>
                         <outlet property="dismissButton" destination="clj-x5-0cp" id="PwU-T4-JiR"/>
                     </connections>
                 </viewController>
@@ -694,9 +696,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-ef-FfD">
                                                 <rect key="frame" x="0.0" y="67" width="375" height="630"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOF-7W-Wqo">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOF-7W-Wqo">
                                                         <rect key="frame" x="16" y="0.0" width="343" height="60"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="반갑습니다," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRe-bs-l1u">
                                                                 <rect key="frame" x="8" y="8" width="74" height="20"/>
@@ -723,10 +724,12 @@
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="Neutral-95"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="KmN-gP-lx1"/>
+                                                        </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNf-lm-Faq">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNf-lm-Faq">
                                                         <rect key="frame" x="16" y="80" width="343" height="44"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="주식, 가상자산, 부동산 검색" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PeA-Cd-n0T">
                                                                 <rect key="frame" x="44" y="5" width="285" height="34"/>
@@ -740,10 +743,12 @@
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="Lu4-t6-Vlh"/>
+                                                        </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-br-mxO">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JU8-br-mxO">
                                                         <rect key="frame" x="16" y="144" width="343" height="68"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uey-xo-8fD">
                                                                 <rect key="frame" x="0.0" y="0.0" width="106" height="68"/>
@@ -828,10 +833,12 @@
                                                             </view>
                                                         </subviews>
                                                         <color key="backgroundColor" name="Neutral-95"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="68" id="c0U-93-cCM"/>
+                                                        </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R7n-Db-VPN">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7n-Db-VPN">
                                                         <rect key="frame" x="16" y="232" width="343" height="80"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="광고입점 예정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWg-Td-Cp6">
                                                                 <rect key="frame" x="125" y="30" width="93" height="21"/>
@@ -842,32 +849,18 @@
                                                             </label>
                                                         </subviews>
                                                         <color key="backgroundColor" name="Neutral-70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="WNc-oN-s26"/>
+                                                        </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3nl-I1-Wtg">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nl-I1-Wtg">
                                                         <rect key="frame" x="16" y="332" width="343" height="298"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l68-Ds-lNH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l68-Ds-lNH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="86"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57A-xA-tmk" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                                        <rect key="frame" x="-16" y="17" width="375" height="52"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🇺🇸 미국 USD, 1,339.50 🔺0.1%    🇨🇳 중국 CNY 186.43 🔹0.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bal-r8-Nyj" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                                                                <rect key="frame" x="0.0" y="18" width="375" height="17"/>
-                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <nil key="textColor"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" name="Neutral-95"/>
-                                                                    </view>
-                                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quh-Dm-0aj">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quh-Dm-0aj">
                                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="26"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="환율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9a-tU-MLH">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="24"/>
@@ -887,9 +880,38 @@
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" name="Neutral-95"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="26" id="d7z-xj-GTw"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57A-xA-tmk" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                                        <rect key="frame" x="0.0" y="34" width="343" height="52"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🇺🇸 미국 USD, 1,339.50 🔺0.1%    🇨🇳 중국 CNY 186.43 🔹0.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bal-r8-Nyj" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                                                                <rect key="frame" x="0.0" y="18" width="400" height="17"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="Neutral-95"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="52" id="DfG-IR-ZBt"/>
+                                                                        </constraints>
                                                                     </view>
                                                                 </subviews>
                                                                 <color key="backgroundColor" name="Neutral-95"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="quh-Dm-0aj" firstAttribute="top" secondItem="l68-Ds-lNH" secondAttribute="top" id="6xg-Sp-kNA"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="57A-xA-tmk" secondAttribute="trailing" id="DdY-sY-gPw"/>
+                                                                    <constraint firstAttribute="height" constant="86" id="MpD-e9-cl9"/>
+                                                                    <constraint firstItem="57A-xA-tmk" firstAttribute="top" secondItem="quh-Dm-0aj" secondAttribute="bottom" constant="8" symbolic="YES" id="QWM-IR-xYb"/>
+                                                                    <constraint firstItem="quh-Dm-0aj" firstAttribute="leading" secondItem="l68-Ds-lNH" secondAttribute="leading" id="XaP-NJ-BKp"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="57A-xA-tmk" secondAttribute="bottom" id="jOU-kW-v4G"/>
+                                                                    <constraint firstItem="57A-xA-tmk" firstAttribute="leading" secondItem="l68-Ds-lNH" secondAttribute="leading" id="sde-SG-EVL"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="quh-Dm-0aj" secondAttribute="trailing" id="wIc-9w-AdL"/>
+                                                                </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-vS-TGI">
                                                                 <rect key="frame" x="0.0" y="126" width="343" height="172"/>
@@ -913,15 +935,58 @@
                                                                         </subviews>
                                                                         <color key="backgroundColor" name="Neutral-95"/>
                                                                     </view>
+                                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gn0-fY-2wd">
+                                                                        <rect key="frame" x="0.0" y="44" width="335" height="128"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vM4-gi-4Hn">
+                                                                            <size key="itemSize" width="128" height="134"/>
+                                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                        </collectionViewFlowLayout>
+                                                                        <cells>
+                                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Tqc-SY-a3N">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="134"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3DJ-bY-7Cb">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="134"/>
+                                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                                </collectionViewCellContentView>
+                                                                            </collectionViewCell>
+                                                                        </cells>
+                                                                    </collectionView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" name="Neutral-95"/>
                                                             </view>
                                                         </subviews>
                                                         <color key="backgroundColor" name="Neutral-95"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="298" id="Ywf-uL-6Ah"/>
+                                                            <constraint firstItem="l68-Ds-lNH" firstAttribute="top" secondItem="3nl-I1-Wtg" secondAttribute="top" id="aLW-1s-0wZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="l68-Ds-lNH" secondAttribute="trailing" id="oP8-2g-Xjr"/>
+                                                            <constraint firstItem="l68-Ds-lNH" firstAttribute="leading" secondItem="3nl-I1-Wtg" secondAttribute="leading" id="ric-x8-oxY"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" name="Neutral-95"/>
                                                 <constraints>
+                                                    <constraint firstItem="JU8-br-mxO" firstAttribute="top" secondItem="mNf-lm-Faq" secondAttribute="bottom" constant="20" id="1ys-yr-J2g"/>
+                                                    <constraint firstItem="mNf-lm-Faq" firstAttribute="leading" secondItem="Vfy-ef-FfD" secondAttribute="leading" constant="16" id="2c3-op-6xp"/>
+                                                    <constraint firstItem="3nl-I1-Wtg" firstAttribute="leading" secondItem="Vfy-ef-FfD" secondAttribute="leading" constant="16" id="92Y-Jk-7oT"/>
+                                                    <constraint firstItem="R7n-Db-VPN" firstAttribute="leading" secondItem="Vfy-ef-FfD" secondAttribute="leading" constant="16" id="BgD-CH-eMg"/>
+                                                    <constraint firstItem="fOF-7W-Wqo" firstAttribute="leading" secondItem="Vfy-ef-FfD" secondAttribute="leading" constant="16" id="N10-DV-d7y"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fOF-7W-Wqo" secondAttribute="trailing" constant="16" id="X0t-Ka-EDw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JU8-br-mxO" secondAttribute="trailing" constant="16" id="Y05-U9-HAg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3nl-I1-Wtg" secondAttribute="bottom" id="Yu0-CM-peS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3nl-I1-Wtg" secondAttribute="trailing" constant="16" id="YyV-kn-DPQ"/>
+                                                    <constraint firstItem="fOF-7W-Wqo" firstAttribute="top" secondItem="Vfy-ef-FfD" secondAttribute="top" id="bjx-Q1-x3D"/>
+                                                    <constraint firstAttribute="trailing" secondItem="R7n-Db-VPN" secondAttribute="trailing" constant="16" id="c9C-44-RZg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mNf-lm-Faq" secondAttribute="trailing" constant="16" id="jm0-hd-WUp"/>
+                                                    <constraint firstItem="R7n-Db-VPN" firstAttribute="top" secondItem="JU8-br-mxO" secondAttribute="bottom" constant="20" id="kWR-Lr-Iho"/>
+                                                    <constraint firstItem="3nl-I1-Wtg" firstAttribute="top" secondItem="R7n-Db-VPN" secondAttribute="bottom" constant="20" id="l6u-Cg-7pw"/>
+                                                    <constraint firstItem="mNf-lm-Faq" firstAttribute="top" secondItem="fOF-7W-Wqo" secondAttribute="bottom" constant="20" id="oi8-qg-thd"/>
+                                                    <constraint firstItem="JU8-br-mxO" firstAttribute="leading" secondItem="Vfy-ef-FfD" secondAttribute="leading" constant="16" id="qDf-Yu-3mL"/>
                                                     <constraint firstAttribute="height" constant="630" id="sea-Vo-ThK"/>
                                                 </constraints>
                                             </view>
