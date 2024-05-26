@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB0BE0B62BCB99D900B3C564 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0B52BCB99D900B3C564 /* UIManager.swift */; };
 		BB0BE0B92BCB9CED00B3C564 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0B82BCB9CED00B3C564 /* UIApplication+Extensions.swift */; };
 		BB0BE0BB2BCBB61400B3C564 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */; };
 		BB0BE0BD2BCC449700B3C564 /* RegisterSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0BE0BC2BCC449700B3C564 /* RegisterSuccess.swift */; };
@@ -25,6 +24,8 @@
 		BB193EC92BB92A5500AF8B18 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB193EC82BB92A5500AF8B18 /* LoginVC.swift */; };
 		BB193ECD2BB92F5D00AF8B18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BB193ECC2BB92F5D00AF8B18 /* Alamofire */; };
 		BB193ECF2BB935F100AF8B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB193ECE2BB935F100AF8B18 /* GoogleService-Info.plist */; };
+		BB4AC0F62C00D41000288E56 /* TestVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AC0F52C00D41000288E56 /* TestVc.swift */; };
+		BB4AC0F82C00EEEA00288E56 /* AllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AC0F72C00EEEA00288E56 /* AllVC.swift */; };
 		BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */; };
 		BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F125D2BC040090075D7BC /* RegisterVC.swift */; };
 		BB895EA22BD16F6800A98E8D /* PinMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB895EA12BD16F6800A98E8D /* PinMoneyVC.swift */; };
@@ -65,6 +66,7 @@
 		BBD9E32F2BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
 		BBD9E3302BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
 		BBD9E3312BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
+		BBE9068A2C03005A00836955 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE906892C03005A00836955 /* UIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +87,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB0BE0B52BCB99D900B3C564 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIManager.swift; path = ../../../Downloads/UIManager.swift; sourceTree = "<group>"; };
 		BB0BE0B82BCB9CED00B3C564 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BB0BE0BC2BCC449700B3C564 /* RegisterSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSuccess.swift; sourceTree = "<group>"; };
@@ -104,6 +105,8 @@
 		BB193EB62BB9223C00AF8B18 /* BankPlanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankPlanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BB193EC82BB92A5500AF8B18 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BB193ECE2BB935F100AF8B18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB4AC0F52C00D41000288E56 /* TestVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVc.swift; sourceTree = "<group>"; };
+		BB4AC0F72C00EEEA00288E56 /* AllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVC.swift; sourceTree = "<group>"; };
 		BB4AC9992BBC63DF00284B20 /* MainLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginVC.swift; sourceTree = "<group>"; };
 		BB4AC99B2BBC661E00284B20 /* BankPlan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BankPlan.entitlements; sourceTree = "<group>"; };
 		BB7F125D2BC040090075D7BC /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		BBD9E3142BBF01580056D4FD /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		BBE906892C03005A00836955 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		BB193E922BB9223B00AF8B18 /* BankPlan */ = {
 			isa = PBXGroup;
 			children = (
+				BBE906892C03005A00836955 /* UIManager.swift */,
 				BB4AC99B2BBC661E00284B20 /* BankPlan.entitlements */,
 				BB193E932BB9223B00AF8B18 /* AppDelegate.swift */,
 				BB193E952BB9223B00AF8B18 /* SceneDelegate.swift */,
@@ -207,7 +212,6 @@
 				BBBF24152BC5A58F00E7EFC0 /* RegisterUserVC.swift */,
 				BB0BE0BA2BCBB61400B3C564 /* MainVC.swift */,
 				BB895EA12BD16F6800A98E8D /* PinMoneyVC.swift */,
-				BB0BE0B52BCB99D900B3C564 /* UIManager.swift */,
 				BB895EA32BD171D800A98E8D /* DividendsCalendarVC.swift */,
 				BB895EA52BD171F000A98E8D /* ClosedDays.swift */,
 				BB895EAC2BD5F1E100A98E8D /* ExchangeRateVC.swift */,
@@ -216,6 +220,8 @@
 				BB0BE0B72BCB9C9200B3C564 /* Extensions */,
 				BBD9E30D2BBF00EB0056D4FD /* Font */,
 				BBC06CAF2BDE197C00CEF3EA /* TabBarVC.swift */,
+				BB4AC0F52C00D41000288E56 /* TestVc.swift */,
+				BB4AC0F72C00EEEA00288E56 /* AllVC.swift */,
 			);
 			path = BankPlan;
 			sourceTree = "<group>";
@@ -438,17 +444,19 @@
 				BB0BE0BD2BCC449700B3C564 /* RegisterSuccess.swift in Sources */,
 				BB895EAD2BD5F1E100A98E8D /* ExchangeRateVC.swift in Sources */,
 				BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */,
-				BB0BE0B62BCB99D900B3C564 /* UIManager.swift in Sources */,
 				BB0BE0BB2BCBB61400B3C564 /* MainVC.swift in Sources */,
 				BB895EA62BD171F000A98E8D /* ClosedDays.swift in Sources */,
 				BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */,
+				BBE9068A2C03005A00836955 /* UIManager.swift in Sources */,
 				BB7F125E2BC0400A0075D7BC /* RegisterVC.swift in Sources */,
 				BBBF24162BC5A58F00E7EFC0 /* RegisterUserVC.swift in Sources */,
 				BB895EA42BD171D800A98E8D /* DividendsCalendarVC.swift in Sources */,
 				BB895EA22BD16F6800A98E8D /* PinMoneyVC.swift in Sources */,
+				BB4AC0F82C00EEEA00288E56 /* AllVC.swift in Sources */,
 				BB193EC92BB92A5500AF8B18 /* LoginVC.swift in Sources */,
 				BB193E962BB9223B00AF8B18 /* SceneDelegate.swift in Sources */,
 				BB8A56FD2BC26904009ECED0 /* Privacy.swift in Sources */,
+				BB4AC0F62C00D41000288E56 /* TestVc.swift in Sources */,
 				BB895EA82BD2B07A00A98E8D /* NotificationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

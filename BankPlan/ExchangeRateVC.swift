@@ -66,8 +66,8 @@ class ExchangeRateVC: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @objc func updateTimeLabel() {
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm:ss"
-        Time.text = formatter.string(from: Date())
+        formatter.dateFormat = "HH:mm"
+        Time.text = "오늘 \(formatter.string(from: Date())) 기준"
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

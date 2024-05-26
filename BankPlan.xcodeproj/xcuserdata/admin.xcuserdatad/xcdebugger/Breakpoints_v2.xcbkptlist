@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "709D941C-74C7-4357-AF55-5C0C5E0D2DE2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "312E2858-46C0-4249-8627-CE98BB477547"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BankPlan/TestVc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchExchangeRateData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "312E2858-46C0-4249-8627-CE98BB477547 - 46f445dde2dbbcf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;BankPlan.ExchangeRateInfo&gt;, Alamofire.AFError&gt;) -&gt; () in BankPlan.TestVc.fetchExchangeRateData() -&gt; ()"
+                  moduleName = "BankPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Desktop/BankPlan-main/BankPlan/TestVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "312E2858-46C0-4249-8627-CE98BB477547 - 46f445dde2dbbcf0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;BankPlan.ExchangeRateInfo&gt;, Alamofire.AFError&gt;) -&gt; () in BankPlan.TestVc.fetchExchangeRateData() -&gt; ()"
+                  moduleName = "BankPlan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Desktop/BankPlan-main/BankPlan/TestVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
