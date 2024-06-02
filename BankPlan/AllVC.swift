@@ -10,7 +10,11 @@ import UIKit
 class AllVC: UIViewController {
 
     @IBOutlet weak var ProfileView: UIView!
+    @IBOutlet weak var SettingBtn: UIButton!
     
+    @IBAction func SettingBtnClick(_ sender: Any) {
+        UIManager.shared.viewChangeEvent(.SettingVC, nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         ProfileView.layer.cornerRadius = 12

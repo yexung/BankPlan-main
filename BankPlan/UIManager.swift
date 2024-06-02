@@ -47,6 +47,21 @@ extension UIManager {
             
             
             break
+        case .SettingVC:
+           
+             
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SettingVC") as? SettingVC {
+                                vc.modalPresentationStyle = .fullScreen
+                                self.present(vc, data, true)
+                            }
+                        }
+            
+            
+            
+            break
+            
         case .RegisterVC:
            
              
@@ -142,6 +157,21 @@ extension UIManager {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExchangeRateVC") as? ExchangeRateVC {
+                                vc.modalPresentationStyle = .fullScreen
+                                self.present(vc, data, true)
+                            }
+                        }
+            
+            
+            
+            break
+            
+        case .MainLoginVC:
+           
+             
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainLoginVC") as? MainLoginVC {
                                 vc.modalPresentationStyle = .fullScreen
                                 self.present(vc, data, true)
                             }
@@ -279,5 +309,9 @@ extension UIManager {
         case NotificationVC
         
         case ExchangeRateVC
+        
+        case SettingVC
+        
+        case MainLoginVC
     }
 }

@@ -6,29 +6,29 @@
 //
 
 import UIKit
+import UIKit
 import Foundation
+import Alamofire
 
-struct ExchangeInfo {
-    let currencyCode: String
-    let exchangeRate: Double
-    let riseRate: Double
+struct ExchangeRateInfo: Codable {
+    let curUnit: String
+    let dealBASR: String
+
+    enum CodingKeys: String, CodingKey {
+        case curUnit = "cur_unit"
+        case dealBASR = "deal_bas_r"
+    }
 }
 
 class ExchangeRateCell: UITableViewCell {
     @IBOutlet weak var CurrencyCodeText: UILabel!
     @IBOutlet weak var ExchangeRateText: UILabel!
-    @IBOutlet weak var RiseRateText: UILabel!
     @IBOutlet weak var CellView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         CellView.layer.cornerRadius = 12
         CellView.layer.masksToBounds = true
-        // Optionally, set a border to see the rounded corners clearly
-//        contentView.layer.borderWidth = 1.0
-//        contentView.layer.borderColor = UIColor.lightGray.cgColor
-//        // Set the background color to clear
-//        backgroundColor = .yellow
     }
 }
 
@@ -37,27 +37,37 @@ class ExchangeRateVC: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var Time: UILabel!
 
-    var ExchangeRateData: [ExchangeInfo] = [
-        ExchangeInfo(currencyCode: "USD", exchangeRate: 1401.05, riseRate: 2.1),
-        ExchangeInfo(currencyCode: "USD", exchangeRate: 1401.05, riseRate: 2.1),
-        ExchangeInfo(currencyCode: "USD", exchangeRate: 1401.05, riseRate: 2.1)
-    ]
-    
+    var ExchangeRateData: [ExchangeRateInfo] = []
+
     var timer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         ExchangeRateTableView.delegate = self
         ExchangeRateTableView.dataSource = self
-
-        // Initialize and start the timer
+        fetchExchangeRateData()
         startTimer()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // Invalidate the timer when the view is about to disappear
         timer?.invalidate()
+    }
+
+    func fetchExchangeRateData() {
+        let url = "https://www.koreaexim.go.kr/site/program/financial/exchangeJSON?authkey=mlUixFu3ldgyyddDiD5uSCZ6MvigAlhj&searchdate=20180102&data=AP01"
+
+        AF.request(url).responseDecodable(of: [ExchangeRateInfo].self) { response in
+            switch response.result {
+            case .success(let data):
+                self.ExchangeRateData = data
+                DispatchQueue.main.async {
+                    self.ExchangeRateTableView.reloadData()
+                }
+            case .failure(let error):
+                print("Error fetching data: \(error)")
+            }
+        }
     }
 
     func startTimer() {
@@ -78,12 +88,11 @@ class ExchangeRateVC: UIViewController, UITableViewDataSource, UITableViewDelega
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ExchangeRateCell", for: indexPath) as? ExchangeRateCell else {
             return UITableViewCell()
         }
-        
-        let ExchangeRate = ExchangeRateData[indexPath.row]
-        cell.CurrencyCodeText.text = ExchangeRate.currencyCode
-        cell.ExchangeRateText.text = "\(ExchangeRate.exchangeRate)"
-        cell.RiseRateText.text = "\(ExchangeRate.riseRate)%"
-        
+
+        let exchangeRate = ExchangeRateData[indexPath.row]
+        cell.CurrencyCodeText.text = exchangeRate.curUnit
+        cell.ExchangeRateText.text = exchangeRate.dealBASR
+
         return cell
     }
 
