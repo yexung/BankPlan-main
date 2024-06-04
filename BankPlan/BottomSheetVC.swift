@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BottomSheetViewController: UIViewController {
+class BottomSheetVC: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
@@ -21,6 +21,10 @@ class BottomSheetViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // view의 상단 양쪽에 radius를 24씩 적용
+        view.layer.cornerRadius = 24
+        view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
 
         titleLabel.text = titleText
         messageLabel.text = messageText
@@ -41,6 +45,6 @@ class BottomSheetViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        preferredContentSize = CGSize(width: view.frame.width, height: 250)
+        preferredContentSize = CGSize(width: view.frame.width, height: 294)
     }
 }

@@ -4,26 +4,19 @@
 //
 //  Created by 윤예성 on 6/3/24.
 //
-
 import UIKit
 
-class BottomSheetTransitioningDelegate: UIViewController {
+class BottomSheetTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return BottomSheetPresentationController(presentedViewController: presented, presenting: presenting)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BottomSheetAnimationController(isPresenting: true)
     }
-    */
 
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return BottomSheetAnimationController(isPresenting: false)
+    }
 }

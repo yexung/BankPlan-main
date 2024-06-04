@@ -473,6 +473,62 @@
             </objects>
             <point key="canvasLocation" x="705" y="-616"/>
         </scene>
+        <!--Bottom SheetVC-->
+        <scene sceneID="6ZX-Yx-odD">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetVC" id="LVT-Lw-I7B" customClass="BottomSheetVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ryr-JT-imN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHa-bX-MLM">
+                                <rect key="frame" x="0.0" y="50" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로그아웃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO5-76-Pbf">
+                                        <rect key="frame" x="17" y="0.0" width="59" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMA-dO-obt">
+                                        <rect key="frame" x="292" y="8" width="75" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whb-Mw-9rG">
+                                <rect key="frame" x="39" y="137" width="303" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjc-Zv-bii">
+                                <rect key="frame" x="153" y="166" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="knw-TG-NnR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="hjc-Zv-bii" id="t1u-UF-jMA"/>
+                        <outlet property="closeButton" destination="mMA-dO-obt" id="D1D-I0-1jZ"/>
+                        <outlet property="messageLabel" destination="whb-Mw-9rG" id="9hd-F3-vC7"/>
+                        <outlet property="titleLabel" destination="wO5-76-Pbf" id="kpy-zD-Phx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ij9-nG-wX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1620" y="56.896551724137936"/>
+        </scene>
         <!--Exchange RateVC-->
         <scene sceneID="nN7-TR-CTX">
             <objects>
@@ -1432,6 +1488,21 @@
             </objects>
             <point key="canvasLocation" x="-156" y="1411"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Xvc-gn-Id4">
+            <objects>
+                <viewController id="WbN-Wh-oBB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uwg-hg-sly">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Bbz-vo-070"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRc-zt-sFN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-897" y="2076"/>
+        </scene>
         <!--AI추천-->
         <scene sceneID="4qF-UB-n98">
             <objects>
@@ -1556,6 +1627,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbc-pI-2cX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156" y="2062.3152709359606"/>
+        </scene>
+        <!--Bottom Sheet Presentation Controller-->
+        <scene sceneID="9Pf-cD-HjU">
+            <objects>
+                <viewController id="xdy-dl-pFS" customClass="BottomSheetPresentationController" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3aZ-FF-CRs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uLY-Jv-2sC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvT-ei-h1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-876" y="2738"/>
         </scene>
         <!--전체-->
         <scene sceneID="3YM-gc-qd3">
@@ -1784,7 +1870,7 @@
         <!--Tab BarVC-->
         <scene sceneID="FV5-he-gqd">
             <objects>
-                <tabBarController id="xbK-Sq-CmX" customClass="TabBarVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarVC" id="xbK-Sq-CmX" customClass="TabBarVC" customModule="BankPlan" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dvH-oO-RKS" customClass="TabBar" customModule="BankPlan" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

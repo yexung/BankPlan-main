@@ -41,7 +41,7 @@ class MainLoginVC: UIViewController {
     func checkLoggedInState() {
         if Auth.auth().currentUser != nil {
             // 이미 로그인 되어 있으면 MainVC로 이동합니다.
-            UIManager.shared.viewChangeEvent(.MainVC, nil)
+            UIManager.shared.viewChangeEvent(.TabBarVC, nil)
         } else {
             // 로그인 되어 있지 않으면 로그인 화면 유지합니다.
             NSLog("사용자 로그인 안됨, 로그인 화면 유지.")
@@ -163,7 +163,7 @@ extension MainLoginVC: ASAuthorizationControllerDelegate {
                 if let newUser = authResult?.additionalUserInfo?.isNewUser, newUser {
                     UIManager.shared.viewChangeEvent(.RegisterVC, nil) // 새 사용자는 등록 화면으로
                 } else {
-                   UIManager.shared.viewChangeEvent(.MainVC, nil)  // 기존 사용자는 메인 화면으로
+                    UIManager.shared.viewChangeEvent(.TabBarVC, nil)
                 }
             }
         }

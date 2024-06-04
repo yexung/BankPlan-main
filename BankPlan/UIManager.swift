@@ -181,6 +181,21 @@ extension UIManager {
             
             break
             
+        case .TabBarVC:
+           
+             
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabBarVC") as? TabBarVC   {
+                                vc.modalPresentationStyle = .fullScreen
+                                self.present(vc, data, true)
+                            }
+                        }
+            
+            
+            
+            break
+            
         default:
             break
         }
@@ -313,5 +328,7 @@ extension UIManager {
         case SettingVC
         
         case MainLoginVC
+        
+        case TabBarVC
     }
 }

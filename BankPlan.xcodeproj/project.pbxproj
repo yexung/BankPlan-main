@@ -68,6 +68,10 @@
 		BBD9E3302BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
 		BBD9E3312BBF01580056D4FD /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */; };
 		BBE9068A2C03005A00836955 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE906892C03005A00836955 /* UIManager.swift */; };
+		BBFF7E702C0DEFA300345FE9 /* BottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFF7E6F2C0DEFA300345FE9 /* BottomSheetVC.swift */; };
+		BBFF7E722C0DEFF900345FE9 /* BottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFF7E712C0DEFF900345FE9 /* BottomSheetPresentationController.swift */; };
+		BBFF7E742C0DF04B00345FE9 /* BottomSheetTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFF7E732C0DF04B00345FE9 /* BottomSheetTransitioningDelegate.swift */; };
+		BBFF7E762C0DF83800345FE9 /* BottomSheetAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFF7E752C0DF83800345FE9 /* BottomSheetAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +136,10 @@
 		BBD9E3152BBF01580056D4FD /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		BBD9E3162BBF01580056D4FD /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		BBE906892C03005A00836955 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		BBFF7E6F2C0DEFA300345FE9 /* BottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetVC.swift; sourceTree = "<group>"; };
+		BBFF7E712C0DEFF900345FE9 /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
+		BBFF7E732C0DF04B00345FE9 /* BottomSheetTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetTransitioningDelegate.swift; sourceTree = "<group>"; };
+		BBFF7E752C0DF83800345FE9 /* BottomSheetAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +233,10 @@
 				BB4AC0F52C00D41000288E56 /* TestVc.swift */,
 				BB4AC0F72C00EEEA00288E56 /* AllVC.swift */,
 				BBBE625C2C07A0F2005FF611 /* SettingVC.swift */,
+				BBFF7E6F2C0DEFA300345FE9 /* BottomSheetVC.swift */,
+				BBFF7E712C0DEFF900345FE9 /* BottomSheetPresentationController.swift */,
+				BBFF7E732C0DF04B00345FE9 /* BottomSheetTransitioningDelegate.swift */,
+				BBFF7E752C0DF83800345FE9 /* BottomSheetAnimationController.swift */,
 			);
 			path = BankPlan;
 			sourceTree = "<group>";
@@ -444,9 +456,12 @@
 				BBC06CB02BDE197C00CEF3EA /* TabBarVC.swift in Sources */,
 				BBC06CAE2BDE192E00CEF3EA /* TabBar.swift in Sources */,
 				BB193E982BB9223B00AF8B18 /* ViewController.swift in Sources */,
+				BBFF7E762C0DF83800345FE9 /* BottomSheetAnimationController.swift in Sources */,
 				BB0BE0BD2BCC449700B3C564 /* RegisterSuccess.swift in Sources */,
 				BB895EAD2BD5F1E100A98E8D /* ExchangeRateVC.swift in Sources */,
+				BBFF7E702C0DEFA300345FE9 /* BottomSheetVC.swift in Sources */,
 				BB193E942BB9223B00AF8B18 /* AppDelegate.swift in Sources */,
+				BBFF7E722C0DEFF900345FE9 /* BottomSheetPresentationController.swift in Sources */,
 				BB0BE0BB2BCBB61400B3C564 /* MainVC.swift in Sources */,
 				BB895EA62BD171F000A98E8D /* ClosedDays.swift in Sources */,
 				BB4AC99A2BBC63DF00284B20 /* MainLoginVC.swift in Sources */,
@@ -458,6 +473,7 @@
 				BBBE625D2C07A0F2005FF611 /* SettingVC.swift in Sources */,
 				BB4AC0F82C00EEEA00288E56 /* AllVC.swift in Sources */,
 				BB193EC92BB92A5500AF8B18 /* LoginVC.swift in Sources */,
+				BBFF7E742C0DF04B00345FE9 /* BottomSheetTransitioningDelegate.swift in Sources */,
 				BB193E962BB9223B00AF8B18 /* SceneDelegate.swift in Sources */,
 				BB8A56FD2BC26904009ECED0 /* Privacy.swift in Sources */,
 				BB4AC0F62C00D41000288E56 /* TestVc.swift in Sources */,
