@@ -13,6 +13,10 @@ DB : Mysql
 주요기능 : 로그인 화원가입, PASS앱 신원확인 앱투앱으로 인증, 배당캘린더, 휴장일, 공지사항
 미션제작과 미션성공했을시 포인트지급 및 계좌로 출금, 환율정보 제공, 거시경제동향 제공, 자산 포트폴리오 
 
+처음에는 FireBase로 구현하려고 했으나 규모가 생각보다 커져서 JAVA SPRING BOOT로 개발진행중입니다.
+
+https://www.figma.com/design/41iO0n22JgZzR4xwK1Jz9Z/BankPlan?node-id=8-206&t=t5mpXNiVPA64oCGi-1
+
 
 ### 앱 로그인
 ![앱 로그인](https://github.com/user-attachments/assets/85998260-6af0-48e8-a825-91f32003b3b1)
